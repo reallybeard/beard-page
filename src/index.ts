@@ -14,12 +14,20 @@ export default {
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
+  @font-face {
+    font-family: 'Aeonik';
+    src: url('/fonts/Aeonik-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
   body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     background: #14120f;
     color: #0e2942;
@@ -155,10 +163,10 @@ export default {
   p {
     font-size: 1rem;
     line-height: 1.7;
+    letter-spacing: 0.02em;
     color: #fff;
     max-width: 500px;
     margin: 0 auto;
-    margin-bottom: 1rem;
   }
 
   .window {
@@ -166,8 +174,12 @@ export default {
     font-size: 0.8rem;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.65);
-    margin-top: 1rem;
   }
+
+  .window {
+    margin-bottom: 0.75rem;
+  }
+
 
   @keyframes blink {
     0%, 100% { opacity: 1; }
@@ -244,8 +256,9 @@ export default {
 
   <h1 class="animate-text">Scheduled Maintenance</h1>
 
+  <p class="window animate-text">March 8, 2026 &mdash; 11:30 AM to 12:00 PM UTC</p>
+
   <p class="animate-text">We're performing an infrastructure upgrade to support Venice's rapid growth. The app and API will be temporarily unavailable.</p>
-  <p class="window animate-text">2026-03-08 // 11:30&ndash;12:00 UTC</p>
 
 </div>
 <script>
