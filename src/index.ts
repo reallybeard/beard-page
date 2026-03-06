@@ -145,6 +145,7 @@ export default {
   h1 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 4em;
+    line-height: 3.75rem;
     font-weight: 400;
     margin-bottom: 0.75rem;
     letter-spacing: -0.02em;
